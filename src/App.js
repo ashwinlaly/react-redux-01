@@ -1,9 +1,14 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <>hi</>
+    <Router>
+      
+    </Router>
+    <div className='jumbotron'>
+
+    </div>
   );
 }
 
