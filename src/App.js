@@ -1,14 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import { Router , Switch, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
 
 const App = () => {
   return (
-    <Router>
-      
-    </Router>
-    <div className='jumbotron'>
-
-    </div>
+    <>
+      <Switch>
+        <Router as='/home' component={Home}/>
+        <Router as='/about' component={About}/>
+      </Switch>
+      <div className='jumbotron'>
+        <Link to='/home'>Home</Link>
+      </div>
+    </>
   );
 }
 
