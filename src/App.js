@@ -7,8 +7,9 @@ const App = () => {
   return (
     <>
       <Switch>
-        <Router as='/home' component={Home}/>
-        <Router as='/about' component={About}/>
+        <Router path='/' exact component={Home}/>
+        <Router path='/home' component={Home}/>
+        <Router path='/about' component={About}/>
       </Switch>
       <div className='jumbotron'>
         <Link to='/home'>Home</Link>
